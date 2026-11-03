@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const rememberedUser = localStorage.getItem("storyspaceRememberedUser");
 
     if (!sessionUser && !rememberedUser) {
-        // alert("Please login to write a story.");
+        alert("Please login to write a story.");
         window.location.href = "login.html";
         return;
     }
