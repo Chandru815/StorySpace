@@ -1,0 +1,185 @@
+
+/* ========================================
+   STORYSPACE - MY STORIES
+======================================== */
+
+.my-stories-section {
+    min-height: 75vh;
+    padding: 75px 0 100px;
+    background: var(--background);
+}
+
+/* Heading */
+
+.stories-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.stories-label {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.stories-heading h1 {
+    font-family: var(--heading-font);
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.stories-heading p {
+    color: var(--text);
+}
+
+/* Tabs */
+
+.story-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+}
+
+.story-tab {
+    padding: 15px 22px;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.story-tab:hover {
+    color: var(--primary);
+}
+
+.story-tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+/* Count */
+
+.story-count {
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Story Card */
+
+.my-story-card {
+    height: 100%;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.my-story-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.my-story-content {
+    padding: 22px;
+}
+
+.my-story-content h3 {
+    font-family: var(--heading-font);
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.my-story-content p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.story-status {
+    display: inline-block;
+    padding: 5px 11px;
+    background: #e7f2eb;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.story-card-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.story-card-actions button {
+    font-size: 13px;
+}
+
+/* Empty State */
+
+.empty-stories {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.empty-stories > i {
+    font-size: 55px;
+    color: var(--primary);
+}
+
+.empty-stories h3 {
+    font-family: var(--heading-font);
+    margin: 20px 0 10px;
+}
+
+.empty-stories p {
+    color: var(--text);
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+
+    .my-stories-section {
+        padding: 50px 0 70px;
+    }
+
+    .stories-heading h1 {
+        font-size: 35px;
+    }
+
+    .story-tabs {
+        gap: 0;
+    }
+
+    .story-tab {
+        padding: 13px 10px;
+        font-size: 13px;
+    }
+
+}
+/* Center My Stories navigation links */
+@media (min-width: 992px) {
+
+    .navbar .navbar-collapse {
+        position: relative;
+        justify-content: center;
+    }
+
+    .navbar .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+}
